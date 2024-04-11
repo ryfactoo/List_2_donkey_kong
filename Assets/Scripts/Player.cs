@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         collider = GetComponent<Collider2D>();
         results = new Collider2D[4];
+        audioSource.volume = 0.1f;
     }
 
     private void CheckCollision()
@@ -176,6 +177,7 @@ public class Player : MonoBehaviour
 
     public void soundSmoking()
     {
+
         audioSource.clip = audioClip;
         audioSource.Play();
     }

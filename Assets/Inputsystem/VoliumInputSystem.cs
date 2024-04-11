@@ -56,11 +56,4 @@ public class Volume : MonoBehaviour
         }
     }
 
-    private void OnGUI()
-    {
-        GUI.Label(new Rect(700, 0, 100, 30), "Volume");
-        volume = GUI.HorizontalSlider(new Rect(700, 30, 100, 30), volume, minVolume, maxVolume);
-    }
-
-
 }
